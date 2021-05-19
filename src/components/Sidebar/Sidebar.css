@@ -13,6 +13,6 @@
   justify-content: center;
 }
 
-.sidebar {
+.sidebar.show {
   transform: translateX(0);
 }
