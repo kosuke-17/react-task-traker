@@ -10,7 +10,8 @@ function Navbar() {
           <Link to="/" className="nav-link">
             Origin-React<i class="fab fa-angellist"></i>
           </Link>
-          <Link to="/notepost" className="nav-post">新規投稿</Link>
+          <Link to="/notepost" className="nav-post">メモ詳細へ</Link>
+          <Link to="/notes" className="nav-post">メモページへ</Link>
        </div>
      </div>
      
