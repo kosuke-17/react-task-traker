@@ -1,4 +1,4 @@
-import React, { UseState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'
 
@@ -6,10 +6,11 @@ function Navbar() {
   return (
     <>
      <div className="nav">
-       <div className="nav-container">
-         <Link to="/" className="nav-link">
+        <div className="nav-container">
+          <Link to="/" className="nav-link">
             Origin-React<i class="fab fa-angellist"></i>
           </Link>
+          <Link to="/notepost" className="nav-post">新規投稿</Link>
        </div>
      </div>
      
