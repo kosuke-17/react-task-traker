@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import './Navbar.css'
+import { Link } from 'react-router-dom';
 
-function Navbar({ click }) {
+
+const Navbar = ({ click }) => {
   return (
     <nav>
       <div className="nav">
@@ -15,15 +15,15 @@ function Navbar({ click }) {
           <li><Link to="/notes" className="nav-memo">メモページへ</Link></li>
           <li><Link to="/notepost" className="nav-memo-detail">メモ詳細へ</Link></li>
         </ul>
-      </div>
-      <div className="hamburger-menu" onClick={click}>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div className="hamburger-menu" onClick={click}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
 
-export default  Navbar;
+export default Navbar;
