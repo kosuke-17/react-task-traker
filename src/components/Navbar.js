@@ -6,13 +6,15 @@ function Navbar() {
   return (
     <>
      <div className="nav">
-        <div className="nav-container">
-          <Link to="/" className="nav-link">
-            Origin-React<i class="fab fa-angellist"></i>
+        <div className="nav-left">
+          <Link to="/" className="nav-name">
+            Origin-App<i class="fab fa-freebsd" />
           </Link>
-          <Link to="/notepost" className="nav-post">メモ詳細へ</Link>
-          <Link to="/notes" className="nav-post">メモページへ</Link>
-       </div>
+        </div>
+        <div className="nav-right">
+          <Link to="/notes" className="nav-memo">メモページへ</Link>
+          <Link to="/notepost" className="nav-memo-detail">メモ詳細へ</Link>
+        </div>
      </div>
      
     </>
