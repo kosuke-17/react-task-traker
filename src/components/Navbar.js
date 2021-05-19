@@ -2,22 +2,26 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'
 
-function Navbar() {
+function Navbar({ click }) {
   return (
-    <>
-     <div className="nav">
+    <nav>
+      <div className="nav">
         <div className="nav-left">
           <Link to="/" className="nav-name">
             Origin-App<i class="fab fa-freebsd" />
           </Link>
         </div>
-        <div className="nav-right">
-          <Link to="/notes" className="nav-memo">メモページへ</Link>
-          <Link to="/notepost" className="nav-memo-detail">メモ詳細へ</Link>
-        </div>
-     </div>
-     
-    </>
+        <ul className="nav-right">
+          <li><Link to="/notes" className="nav-memo">メモページへ</Link></li>
+          <li><Link to="/notepost" className="nav-memo-detail">メモ詳細へ</Link></li>
+        </ul>
+      </div>
+      <div className="hamburger-menu" onClick={click}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
   )
 }
 
